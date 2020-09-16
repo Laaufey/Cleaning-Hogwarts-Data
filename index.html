@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cleaning Hogwarts Data</title>
+  </head>
+  <body>
+    <h1>Hogwats Student List</h1>
+    <table id="list">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Middlename</th>
+          <th>Nickname</th>
+          <th>House</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- template will be copied and inserted here -->
+      </tbody>
+    </table>
+
+    <template id="students">
+      <tr>
+        <td data-field="firstName">Firstname</td>
+        <td data-field="lastName">Lastname</td>
+        <td data-field="middleName">Middlename</td>
+        <td data-field="nickName">Nickname</td>
+        <td data-field="house">House</td>
+        <td data-field="image">Image</td>
+      </tr>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>
